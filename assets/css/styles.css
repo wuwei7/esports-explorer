@@ -18,7 +18,8 @@ body * {
 }
 
 header {
-  margin-top: 32px;
+  margin: 32px 0;
+  height: 120px;
 }
 
 header div {
@@ -94,4 +95,49 @@ section ul li:hover {
 .channel-list img {
   border-radius: 50%;
   width: 70px;
+}
+
+header div {
+  /* Name, duration, delay. If there's a delay, it's important to have backwards fetch animation properties beforehand and make it smoother. */
+  animation: fromTop .8s .2s backwards;
+}
+
+main section {
+  animation: fromBottom .8s backwards;
+}
+
+main section:nth-child(1) {
+  animation-delay: .2s;
+}
+
+main section:nth-child(2) {
+  animation-delay: .4s;
+}
+
+main section:nth-child(3) {
+  animation-delay: .8s;
+}
+
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
