@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #121214;
+}
+
+main * {
+  border: 1px solid red;
+}
+
+main {
+  max-width: 580px;
+  width: 90%;
+  margin: auto;
+}
