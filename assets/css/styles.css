@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-ul {
-  list-style: none;
-}
-
 body {
   background-image: url(../img/background.jpg);
   background-position: top center;
@@ -21,18 +17,29 @@ body * {
   line-height: 160%;
 }
 
-main * {
+/* main * {
   border: 1px solid red;
-}
+} */
 
 main {
   max-width: 580px;
   width: 90%;
-  margin: auto;
+  margin: 32px auto auto auto;
+  display: grid;
+  gap: 24px;
 }
 
 section {
   color: #fff;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50%, #E2D45C 100%);
+  padding-top: 4px;
+  border-radius: 10px;
+}
+
+section div {
+  background-color: #2a2634;
+  border-radius: 8px;
+  padding: 24px 32px 32px 32px;
 }
 
 section h2 {
@@ -42,4 +49,22 @@ section h2 {
 section p {
   color: #a1a1aa;
   letter-spacing: -0.18px;
+}
+
+section ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.game-list img {
+  border-radius: 8px;
+  width: 90px;
+}
+
+.channel-list img {
+  border-radius: 50%;
+  width: 70px;
 }
