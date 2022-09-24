@@ -9,7 +9,7 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #121214;
+  background-color: #111113;
 }
 
 body * {
@@ -17,14 +17,22 @@ body * {
   line-height: 160%;
 }
 
-/* main * {
-  border: 1px solid red;
-} */
+header {
+  text-align: center;
+  margin-top: 32px;
+}
+
+header img {
+  width: 120px;
+  border-radius: 50%;
+  padding: 4px;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50%, #E2D45C 100%);
+}
 
 main {
   max-width: 580px;
-  width: 90%;
-  margin: 32px auto auto auto;
+  width: 90%; /* If screen is under 580px */
+  margin: 32px auto;
   display: grid;
   gap: 24px;
 }
